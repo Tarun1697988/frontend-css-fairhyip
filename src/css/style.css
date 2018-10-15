@@ -4,20 +4,19 @@ body {
 
   font-weight: 400;
   font-size: 11px;
-  font-family: Georgia, "Times New Roman", sans-serif;
-  color: #ffffff;
+  font-family: Verdana, Tahoma, sans-serif;
+  color: #dfb4b4;
 
   background-image: url("../images/bg_body.jpg");
 }
 
-ul {
-  margin: 0;
+h1 {
+  margin-bottom: 15px;
 
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 22px;
+  color: #ead4aa;
+  font-style: normal;
 }
 
 .wrapper {
@@ -32,89 +31,92 @@ a {
   margin-top: 40px;
 }
 
-.lang-list {
+.header .lang-list {
   display: flex;
   order: 0;
   margin-left: 22px;
 }
 
-.lang-item {
+.lang-list .lang-item {
   box-sizing: border-box;
+  padding-right: 10px;
   padding-left: 10px;
+
+  border-right: 1px solid #ffffff;
 }
 
 .lang-item a {
   color: #ffffff;
-  text-decoration: underline;
 }
 
 .lang-item:first-child {
-  padding-right: 10px;
   padding-left: 0;
 
   color: #e8d1a4;
-
-  border-right: 1px solid #ffffff;
 }
 
-.lang-item:nth-child(n+3) {
-  display: none;
+.lang-item:last-child {
+  border-right: none;
 }
-.logo {
+
+.header .logo {
   order: 3;
   margin-top: 10px;
   margin-left: 30px;
 }
-.auth {
-  margin-left: 740px;
+.header .auth {
+  margin-left: 640px;
 }
 
-.auth a {
+.header .auth a {
   padding-right: 10px;
 
   color: #ffffff;
-  text-decoration: underline;
 }
 
-.signin a {
+.header .signin a {
   color: #e8d1a4;
 
   border-right: 1px solid #ffffff;
 }
 
-.auth span:last-child {
+.header .auth span:last-child {
   padding-left: 10px;
 }
 
-.mainmenu {
+.header .mainmenu {
   order: 4;
   align-self: flex-end;
   margin-left: auto;
 }
 
-.menu-list {
+.header .menu-list {
   display: flex;
 
   background-color: #efeeed;
   border-radius: 5px;
 }
 
-.menu-item {
-  padding: 15px 30px;
-}
 
-.menu-item a {
+.header .menu-item a {
+  display: inline-block;
+  padding: 15px 30px;
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 400;
   font-size: 14px;
   color: #461500;
+  text-decoration: none;
 }
 
 .menu-item:hover {
-  background-color: #e8d1a4;
+  background-color: #f0ca5d;
   border-radius: 5px;
+
+  transition: 1s ease-out;
 }
 
-.active {
+.header .mainmenu .active {
   background-image: linear-gradient(to bottom, #f0ca5d,#bd4420);
   border-radius: 5px;
 }
@@ -126,7 +128,7 @@ a {
   border-bottom: 1px solid #9d8a54;
 }
 
-.promo {
+.content .promo {
   position: relative;
 
   box-sizing: border-box;
@@ -141,7 +143,7 @@ a {
   border-radius: 15px;
 }
 
-.promo::before {
+.content .promo::before {
   content: "";
   position: absolute;
   top: 31px;
@@ -154,22 +156,17 @@ a {
   background-repeat: no-repeat;
 }
 
-.promo h1 {
-  margin-bottom: 15px;
-
-  font-size: 22px;
-  color: #ead4aa;
-}
-
-.article {
+.content .article {
   position: relative;
 
   margin-top: 45px;
   margin-left: 145px;
   padding-right: 45px;
+
+  font-family: Verdana, "Times New Roman", sans-serif;
 }
 
-.article img {
+.content .article img {
   position: absolute;
   top: 0;
   left: -130px;
@@ -181,39 +178,54 @@ a {
 
 .content .article:nth-child(4) img {
   top: 29px;
+  left: -120px;
+
+  width: 76px;
+  height: 63px;
 }
 .content .article:last-child img {
   top: 10px;
+  left: -110px;
+  width: 63px;
+  height: 68px;
 }
-.article h2 {
+.content .article h2 {
   margin-bottom: 20px;
 
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 18px;
   color: #fff68d;
 }
 
 .footer {
   display: flex;
+  justify-content: space-between;
   width: 1000px;
   margin: 0 auto;
   padding: 0 10px;
   padding-top: 40px;
   padding-bottom: 20px;
-  justify-content: space-between;
 }
 
 .copyright {
   margin-left: 10px;
+
   color: #f9da5a;
 }
 
 .footermenu .menu-list {
+  display: flex;
+}
+
+.footermenu .menu-list {
   margin-right: 25px;
+
   background: none;
 }
 
 .footermenu .menu-item {
   padding: 0 10px;
+
   border-right: 1px solid #ffffff;
 }
 
@@ -221,12 +233,13 @@ a {
   border-right: none;
 }
 
-.footermenu .menu-item a{
-  color: #fff;
+.footermenu .menu-item a {
   font-size: 11px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.footermenu .menu-item:hover{
+.footermenu .menu-item:hover {
   background: none;
   border-radius: 0;
 }
