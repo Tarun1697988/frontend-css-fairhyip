@@ -5,19 +5,25 @@ body {
   font-weight: 400;
   font-size: 11px;
   font-family: Verdana, Tahoma, sans-serif;
-  color: #dfb4b4;
+  color: #d7cfc8;
+  line-height: normal;
 
   background-image: url("../images/bg_body.jpg");
 }
 
 h1 {
-  margin-bottom: 15px;
-
-  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 22px;
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: #ead4aa;
   font-style: normal;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --------------------   Header  --------------------------- */
 
 .wrapper {
   width: 1000px;
@@ -102,9 +108,9 @@ h1 {
   display: inline-block;
   padding: 15px 30px;
 
-  font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 400;
   font-size: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: #461500;
   text-decoration: none;
 }
@@ -121,6 +127,8 @@ h1 {
   border-radius: 5px;
 }
 
+/* ------------main content ---------------*/
+
 .content {
   margin-top: 30px;
   padding-bottom: 65px;
@@ -132,10 +140,12 @@ h1 {
   position: relative;
 
   box-sizing: border-box;
+  margin-bottom: 45px;
   padding: 20px 45px 30px 145px;
 
   font-size: 14px;
   line-height: 22px;
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: #f9da5a;
   font-style: italic;
 
@@ -156,46 +166,34 @@ h1 {
   background-repeat: no-repeat;
 }
 
+.content .promo h1 {
+  margin-bottom: 15px;
+}
+
 .content .article {
   position: relative;
 
-  margin-top: 45px;
+  margin-bottom: 40px;
   margin-left: 145px;
-  padding-right: 45px;
+}
 
-  font-family: Verdana, "Times New Roman", sans-serif;
+.content .article h2 {
+  margin-bottom: 15px;
+
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #fff68d;
 }
 
 .content .article img {
   position: absolute;
-  top: 0;
+  top: calc(50% - 30px);
   left: -130px;
+
+  max-width: 95px;
 } 
 
-.content .article:nth-child(3) img {
-  top: 58px;
-}
-
-.content .article:nth-child(4) img {
-  top: 29px;
-  left: -120px;
-
-  width: 76px;
-  height: 63px;
-}
-.content .article:last-child img {
-  top: 10px;
-  left: -110px;
-  width: 63px;
-  height: 68px;
-}
-.content .article h2 {
-  margin-bottom: 20px;
-
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 18px;
-  color: #fff68d;
-}
+/* --------------footer ----------------------------------*/
 
 .footer {
   display: flex;
@@ -234,7 +232,7 @@ h1 {
 }
 
 .footermenu .menu-item a {
-  font-size: 11px;
+  font-family: inherit;
   color: #ffffff;
   text-decoration: none;
 }
