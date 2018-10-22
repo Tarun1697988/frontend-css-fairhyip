@@ -12,8 +12,10 @@ body {
 }
 
 h1,h2 {
+  margin-bottom: 15px;
+
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: normal;f
+  font-style: normal;
 }
 
 h1 {
@@ -176,20 +178,11 @@ img {
   background-repeat: no-repeat;
 }
 
-.content .promo h1 {
-  margin-bottom: 15px;
-}
-
 .content .article {
   position: relative;
 
   margin-bottom: 40px;
   margin-left: 145px;
-}
-
-.content .article h2 {
-  margin-bottom: 15px;
-
 }
 
 .content .article img {
