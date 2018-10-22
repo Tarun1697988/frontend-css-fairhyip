@@ -11,11 +11,21 @@ body {
   background-image: url("../images/bg_body.jpg");
 }
 
+h1,h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;f
+}
+
 h1 {
   font-size: 22px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  
   color: #ead4aa;
-  font-style: normal;
+}
+
+h2 {
+  font-size: 18px;
+
+  color: #fff68d;
 }
 
 img {
@@ -180,9 +190,6 @@ img {
 .content .article h2 {
   margin-bottom: 15px;
 
-  font-size: 18px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #fff68d;
 }
 
 .content .article img {
